@@ -3,7 +3,7 @@ from sklearn.linear_model import LogisticRegression
 
 # Docker uzerindeki PostgreSQL veritabanina baglanma
 conn = psycopg2.connect(
-    host="localhost",
+host="host.docker.internal",
     database="postgres",
     user="postgres",
     password="secret123",
